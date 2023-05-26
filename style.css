@@ -1,0 +1,492 @@
+/* reset css basis style*/
+html {
+  font-size: 62.5%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: inherit;
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+
+img, picture {
+  display: block;
+  width: 100%;
+}
+
+/* font size adn color*/
+:root {
+  --fs-h1:3.2rem;
+  --fs-h2:2.8rem;
+  --fs-h3:2.4rem;
+  --fs-h4:1.6rem;
+  --fs-h5-button:1.8rem;
+  --fs-h6-section:1.6rem;
+  --fs-p:1.6rem;
+
+
+  --clr-Strong-Cyan: hsl(171, 66%, 44%);
+  --clr-Light-Blue: hsl(233, 100%, 69%);
+  --clr-Dark-Grayish-Blue: hsl(210, 10%, 33%);
+  --clr-Grayish-Blue: hsl(201, 11%, 66%);
+}
+
+@media (min-width:90rem) {
+  :root {
+    --fs-h1:4.6rem;
+    --fs-h2:3.6rem;
+    --fs-h4:2rem;
+    --fs-h6-section:1.8rem;
+    --fs-p:1.8rem;
+  }
+}
+
+/* typograpy h1-h6 and p fonts and all style*/
+h1, h2, h3, h5 {
+  font-weight: 600;
+  color: var(--clr-Dark-Grayish-Blue);
+}
+
+p, footer h5, h4 {
+  font-weight: 400;
+}
+
+h1 {
+  font-size: var(--fs-h1);
+  line-height: 4rem;
+  letter-spacing: -0.52px;
+}
+
+h2 {
+  font-size: var(--fs-h2);
+  line-height: 3.5rem;
+  letter-spacing: -0.46px;
+}
+
+h3 {
+  font-size: var(--fs-h3);
+  line-height: 3rem;
+  letter-spacing: -0.39px;
+}
+
+h4 {
+  font-size: var(--fs-h4);
+  color: var(--clr-Grayish-Blue);
+  line-height: 2.6rem;
+  letter-spacing: 0.12px;
+}
+
+h5 {
+  font-size: var(--fs-h5-button);
+  line-height: 3rem;
+  letter-spacing: 0.15px;
+}
+
+p {
+  font-size: var(--fs-p);
+  line-height: 2.6rem;
+  letter-spacing: 0.12px;
+  color: var(--clr-Grayish-Blue);
+}
+
+footer h5 {
+  color: var(--clr-Dark-Grayish-Blue);
+  line-height: 3rem;
+  letter-spacing: 0.15px;
+}
+
+/* fonts for desktop */
+@media (min-width:90em) {
+h1 {
+  line-height: 5.7rem;
+  letter-spacing: -0.75px;
+}
+
+h2 {
+  line-height: 3.6rem;
+  letter-spacing: -0.59px;
+}
+
+h4 {
+  line-height: 3rem;
+  letter-spacing: 0.15px;
+}
+
+.two p, .container-four p {
+  font-size: 1.6rem;
+  letter-spacing: 0.12px;
+}
+
+p {
+  line-height: 3rem;
+  letter-spacing: 0.14px;
+}
+}
+
+/* main for mobail */
+main {
+  max-width: 375px;
+  margin: auto;
+  background-color:#FFFFFF ; 
+  text-align: center;
+}
+
+/* first bg img */
+.bg-img {
+  position: relative;
+
+}
+
+.bg-img img {
+  position: absolute;
+}
+
+.one-logo {
+  width: 12.5rem;
+  margin: auto;
+  padding-top: 12.3rem;
+}
+
+/* one section */
+.one-1 {
+  margin: 6.4rem 3.2rem 4.8rem 3.2rem;
+  /* text-align: center; */
+}
+
+.one-1 h4 {
+  margin-top: 1.6rem;
+}
+
+/* buttons */
+.btn button{
+  display: block;
+  margin: auto;
+  border-radius: 2.8rem;
+  width: 31.1rem;
+  height: 5.6rem;
+}
+
+.btn button h5 {
+  letter-spacing: 0.5px;
+  color: #FFFFFF;
+}
+
+.btn button:nth-child(1) {
+  background: var(--clr-Strong-Cyan);
+}
+
+.btn button:nth-child(2) {
+  background: var(--clr-Light-Blue);
+  margin-top: 2.4rem;
+}
+
+/* hover animation for button */
+.btn button:hover {
+  cursor: pointer;
+}
+
+/* section one last div */
+.one-last-div {
+  margin: 16rem 3.2rem 0 3.2rem;
+}
+
+.one-last-div p{
+  margin-top: 1.6rem;
+}
+
+/* media query for desktop section one change margin, padding*/
+@media (min-width:90em) {
+  main {
+    max-width: 144rem;
+  }
+
+  .one-logo {
+    padding-top: 12.8rem;
+  }
+
+  .one-1 {
+    width: 73rem;
+    margin: 5.6rem auto 1.6rem auto;
+  }
+
+  .btn {
+    display: flex;
+    gap: 1.6rem;
+    width: 47rem;
+    margin: 4.8rem auto;
+  }
+
+  .btn button {
+    width: 22.7rem;
+  }
+
+  .btn button:nth-child(2) {
+    margin-top: 0;
+  }
+
+  .one-last-div {
+    width: 73rem;
+    margin: 15rem auto 8rem auto;
+  }
+
+  .one-last-div p{
+    margin-top: 1.9rem;
+  }
+}
+
+/* section two */
+.two,.three, .four, .six{
+  margin: 0 3.2rem;
+}
+
+/* two img */
+.two img {
+  margin: 6.5rem 0 5.6rem 0;
+}
+
+/* section two container div */
+.container-two {
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+}
+
+.container-two h3 {
+  padding-bottom: 1rem;
+}
+
+/* query section two */
+@media (min-width:90em) {
+  .two {
+    width: 1212px;
+    display: flex;
+    gap: 11rem;
+    align-items: center;
+    margin-right: 26rem;
+    margin-left: -3.2rem;
+    /* overflow-y: hidden; */
+  }
+
+  .container-two {
+    text-align: left;
+    gap: 5.6rem;
+    /* width: 350px; */
+  }
+
+  .two img {
+    /* overflow: hidden; */
+    height: 100%;
+    width: 752px;
+    margin: 0;
+    /* object-fit:scale-down; */
+  }
+
+  .container-two h3 {
+    padding-bottom: .8rem;
+  }
+}
+
+/* section three */
+.three {
+  margin-top: 18.6rem;
+}
+
+.three p {
+  margin: 1.6rem 0 6.4rem 0;
+}
+
+/* query section three */
+@media (min-width:90em) {
+  .three {
+    margin-top: 15rem;
+  }
+
+  .three div {
+    width: 73rem;
+    margin: auto;
+  }
+
+  .three p {
+    margin: 1.9rem 0 11rem 0;
+  }
+
+  .three img {
+    width: 812px;
+    margin: auto;
+  }
+}
+
+/* section four */
+.four {
+  margin-top: 13rem;
+}
+
+.four div:nth-child(1) p {
+  margin-top: 1.1rem;
+}
+
+.four img {
+  width: 4.4rem;
+  margin: auto;
+}
+
+.container-four {
+  margin-top: 9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5.6rem;
+}
+
+.container-four h3 {
+  margin: 4.4rem 0 1.8rem 0;
+}
+
+/* four */
+@media (min-width:90em) {
+  .four {
+    margin-top: 16.1rem;
+  }
+
+  .four div:nth-child(1) p {
+    margin-top: 1.9rem;
+  }
+
+  .container-four {
+    margin: 7.2rem 16.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    width: 1110px;
+  }
+
+  .container-four div {
+    width: 350px;
+  }
+}
+
+/* section five */
+.five {
+  margin: 13.1rem 11.8rem 0 13.1rem;
+  height: 44rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.six {
+  margin-top: 17rem;
+  padding-bottom: 17rem;
+}
+
+.six p {
+  margin: 1.6rem 0 4.6rem 0;
+}
+
+/* sextion six */
+@media (min-width:90em) {
+  .five {
+    margin: 15rem 16.5rem ;
+    height: 7.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1110px;
+  }
+  
+  .five img {
+    width: 16.5rem;
+    height: 4.9rem;
+  }
+
+  .six {
+    margin: 15rem auto 0 auto;
+    width: 73rem;
+  }
+
+  .six p {
+    margin: 1.9rem 0 4.8rem 0;
+    
+  }
+}
+
+/* footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #F2F2F2;
+  max-width: 375px;
+  margin: 0 auto;
+}
+
+footer img {
+  width: 5.5rem;
+  padding-top: 5.2rem;
+}
+
+.footer-1-div {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer-1-div div h5:nth-child(1){
+  padding-bottom: 2rem;
+}
+
+/* icons */
+.footer-icon {
+  margin-top: 5rem;
+  margin-bottom: 5.1rem;
+  width: 16rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* hover footer h5 and icone*/
+.footer-1-div h5:hover {
+  cursor: pointer;
+  color: var(--clr-Strong-Cyan);
+}
+
+.footer-icon path:hover {
+  cursor: pointer;
+  fill: var(--clr-Strong-Cyan);
+}
+
+/* footer query*/
+@media (min-width:90em) {
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 144rem;
+    height: 15rem;
+    padding: 0 16.5rem 3.9rem 16.5rem;
+  }
+
+  .footer-1-div {
+    /* margin-top: 0; */
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    text-align: left;
+  }
+
+  footer img {
+    padding-top: 0;
+    /* margin-top: 0; */
+  }
+
+  .footer-1-div div h5 {
+    width: 16rem;
+  }
+}
